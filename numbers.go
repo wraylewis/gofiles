@@ -1,21 +1,15 @@
-
 package main
 
 import "fmt"
 
-type mytype int
-
-var x mytype
-var y int
+var x int
+var y float64
 
 func main() {
-
-	fmt.Println(x)
-	fmt.Printf("%T\n", x)
 	x = 42
+	y = 42.3456
 	fmt.Println(x)
-	y = int(x)
 	fmt.Println(y)
+	fmt.Printf("%T\n", x)
 	fmt.Printf("%T\n", y)
-
 }
